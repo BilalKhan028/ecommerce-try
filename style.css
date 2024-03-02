@@ -1,0 +1,198 @@
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
+}
+
+.carousel-item img {
+  height: 600px; 
+  object-fit: cover; 
+}
+/* .nav-item{
+  text-align: center !important;
+} */
+
+.cardbest{
+  font-weight: bolder;
+}
+.commingsoon{
+  color: orangered;
+}
+/* .btcustom{
+  margin-top: 3%;
+} */
+
+.card{
+  width: auto;
+  height: 99%;
+}
+.nike{
+  height: 6em;
+  
+}
+.nike h2{
+  margin-top: 2em !important;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap'); */
+
+.btn1{
+
+font-family: Roboto Condensed;
+font-weight: 900;
+font-size: 14px;
+color: #fff;
+background: linear-gradient(90deg, #0066CC 0%, #00b4d8 100%);
+padding: 10px 30px;
+border: solid #0077b6 2px;
+box-shadow: rgb(38, 70, 83) 3px 3px 0px 3px;
+border-radius: 19px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+.btn1:hover{
+
+transition : 1000ms;
+padding: 10px 45px;
+transform : translateY(-6px);
+background: linear-gradient(90deg, #0066CC 0%, #00b4d8 100%);
+color: black;
+border: none;
+font-weight: bolder;
+}
+
+
+
+.btn-primary {
+  width: 100%;
+}
+
+
+.card {
+  margin-bottom: 20px !important;
+}
+
+/* Responsive styling */
+@media (min-width: 576px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+  }
+
+  .card-body {
+    flex-grow: 1; 
+  }
+
+  .btn-primary {
+    width: auto; 
+  }
+}
+
+
+
+/* ------------------------- */
+
+
+
+/* Shopping Cart Styles */
+.cartTab {
+  width: 400px;
+  background-color: #353432;
+  color: #eee;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  transition: .5s;
+}
+
+body.showCart .cartTab {
+  right: 0;
+}
+
+body.showCart .container {
+  transform: translateX(-250px);
+}
+
+.cartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.cartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab button {
+  background-color: #E8BC0E;
+  border: none;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cartTab .close {
+  background-color: #eee;
+}
+
+.listCart .item img {
+  width: 100%;
+}
+
+.listCart .item {
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.listCart .quantity span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  color: #555;
+  cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+  cursor: auto;
+}
+
+.listCart .item:nth-child(even) {
+  background-color: #eee1;
+}
+
+.listCart {
+  overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+  width: 0;
+}
+.above-slider {
+  
+  z-index: 2; 
+}
+
+.slider {
+ 
+  z-index: 1;
+ 
+}
